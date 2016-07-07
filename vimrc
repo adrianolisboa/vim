@@ -2,13 +2,11 @@ set nocompatible
 set runtimepath+=~/.vim/bundle/Vundle.vim
 
 " Enable filetype plugins
-filetype plugin on
-filetype indent on
-
-filetype off
+filetype plugin indent on
+syntax on
 
 call vundle#begin()
-
+ 
 " Theme
 let g:molokai_original = 1
 colorscheme molokai
@@ -45,4 +43,3 @@ Plugin 'tpope/vim-commentary'
 Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
-filetype plugin indent on
