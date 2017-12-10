@@ -34,6 +34,20 @@ set clipboard=unnamed
 set wildignore+=*.o,*.obj,.git,tmp/**,build/**,coverage/**,node_modules/**
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
+" Changing Habits
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+vnoremap <up> <nop>
+vnoremap <down> <nop>
+vnoremap <left> <nop>
+vnoremap <right> <nop>
+
 " Vundle Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
