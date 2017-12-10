@@ -56,5 +56,6 @@ Plugin 'scrooloose/nerdTree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'wikitopian/hardmode'
 
 call vundle#end()
