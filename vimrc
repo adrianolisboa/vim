@@ -26,7 +26,6 @@ set smarttab    	" Be smart when using tabs ;)
 set shiftwidth=4	" 1 tab == 4 spaces
 set tabstop=4		" 1 tab == 4 spaces
 set laststatus=2    " Always show the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 set clipboard=unnamed 
 set number          " Turn on line numbers
 
@@ -34,7 +33,7 @@ set number          " Turn on line numbers
 set wildignore+=*.o,*.obj,.git,tmp/**,build/**,coverage/**,node_modules/**
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
-" Changing Habits
+" Changing Habits (remove arrow keys)
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -56,5 +55,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
