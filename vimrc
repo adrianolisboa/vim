@@ -3,14 +3,13 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 
 " Enable filetype plugins
 filetype plugin indent on
-syntax on
 
 call vundle#begin()
  
 " Theme
-let g:molokai_original = 1
-colorscheme molokai
+syntax enable
 set background=dark
+colorscheme solarized
 
 " General configurations
 set wildmenu		" Turn on the WiLd menu
