@@ -49,12 +49,11 @@ vnoremap <right> <nop>
 
 " Vundle Plugins
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'bling/vim-airline'
+Plugin 'wikitopian/hardmode'
+Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/nerdTree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'wikitopian/hardmode'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
