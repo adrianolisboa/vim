@@ -28,6 +28,7 @@ set tabstop=4		" 1 tab == 4 spaces
 set laststatus=2    " Always show the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 set clipboard=unnamed 
+set number          " Turn on line numbers
 
 " Ignore compiled files
 set wildignore+=*.o,*.obj,.git,tmp/**,build/**,coverage/**,node_modules/**
