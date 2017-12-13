@@ -6,8 +6,10 @@ filetype plugin indent on
 
 call vundle#begin()
  
-" Theme
 syntax enable
+
+" Theme
+let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
 
@@ -52,14 +54,21 @@ vnoremap <down> <nop>
 vnoremap <left> <nop>
 vnoremap <right> <nop>
 
-" Vundle Plugins
+" Cool Plugins
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'wikitopian/hardmode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
+
+" Git
+Plugin 'tpope/vim-fugitive'
+
+" Visuals
+Plugin 'altercation/vim-colors-solarized'
+
+" Change Habits 
+Plugin 'wikitopian/hardmode'
 
 call vundle#end()
