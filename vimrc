@@ -11,6 +11,11 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Turn Off Swap Files 
+set noswapfile
+set nobackup
+set nowb
+
 " General configurations
 set wildmenu		" Turn on the WiLd menu
 set ruler       	" Always show current po
