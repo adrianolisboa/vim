@@ -34,8 +34,9 @@ set shiftwidth=4	" 1 tab == 4 spaces
 set tabstop=4		" 1 tab == 4 spaces
 set laststatus=2    " Always show the status line
 set clipboard=unnamed 
-set number          " Turn on line numbers
 set visualbell      " No sounds
+set number 
+set relativenumber
 
 " Ignore compiled files
 set wildignore+=*.o,*.obj,.git,tmp/**,build/**,coverage/**,node_modules/**
