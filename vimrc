@@ -59,9 +59,10 @@ vnoremap <right> <nop>
 " Cool Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim' "Powerful fuzzy finder
 Plugin 'vim-syntastic/syntastic'
-Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline' "Beautiful statusbar
+Plugin 'jeetsukumaran/vim-buffergator' "Easy way to deal with buffers
 
 " Git
 Plugin 'tpope/vim-fugitive'
