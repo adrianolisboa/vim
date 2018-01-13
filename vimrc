@@ -56,6 +56,13 @@ vnoremap <down> <nop>
 vnoremap <left> <nop>
 vnoremap <right> <nop>
 
+" Buffergator custom configurations
+let g:buffergator_viewport_split_policy = 'R' " Use menu at the right side of the screen
+let g:buffergator_suppress_keymaps = 1 "Add my own keymaps
+nmap <leader>bp :BuffergatorMruCyclePrev<cr> " Go to the previous buffer open
+nmap <leader>bn :BuffergatorMruCycleNext<cr> " Go to the next buffer open
+nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
+
 " Cool Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
