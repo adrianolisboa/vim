@@ -1,10 +1,7 @@
 set nocompatible
-set runtimepath+=~/.vim/bundle/Vundle.vim
 
 " Enable filetype plugins
 filetype plugin indent on
-
-call vundle#begin()
  
 syntax enable
 
@@ -56,28 +53,5 @@ vnoremap <down> <nop>
 vnoremap <left> <nop>
 vnoremap <right> <nop>
 
-" Buffergator custom configurations
-let g:buffergator_viewport_split_policy = 'R' " Use menu at the right side of the screen
-let g:buffergator_suppress_keymaps = 1 "Add my own keymaps
-nmap <leader>bp :BuffergatorMruCyclePrev<cr> " Go to the previous buffer open
-nmap <leader>bn :BuffergatorMruCycleNext<cr> " Go to the next buffer open
-nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
-
-" Cool Plugins
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim' "Powerful fuzzy finder
-Plugin 'vim-syntastic/syntastic'
-Plugin 'vim-airline/vim-airline' "Beautiful statusbar
-Plugin 'jeetsukumaran/vim-buffergator' "Easy way to deal with buffers
-
-" Git
-Plugin 'tpope/vim-fugitive'
-
-" Visuals
-Plugin 'altercation/vim-colors-solarized'
-
-" Change Habits 
-Plugin 'wikitopian/hardmode'
-
-call vundle#end()
+" Loads minpac and packages 
+source ~/.vim/packages.vim
