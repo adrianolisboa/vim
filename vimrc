@@ -5,6 +5,9 @@ filetype plugin indent on
  
 syntax enable
 
+" Leader key
+let mapleader=" "
+
 " Theme
 let g:solarized_termtrans = 1
 set background=dark
