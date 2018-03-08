@@ -14,6 +14,7 @@ if exists('*minpac#init')
 
     " Visuals
     call minpac#add('altercation/vim-colors-solarized')
+    call minpac#add('Yggdroot/indentLine')
 
     " Change Habits 
     call minpac#add('wikitopian/hardmode')
@@ -25,6 +26,9 @@ let g:buffergator_suppress_keymaps = 1 "Add my own keymaps
 nmap <leader>bp :BuffergatorMruCyclePrev<cr> " Go to the previous buffer open
 nmap <leader>bn :BuffergatorMruCycleNext<cr> " Go to the next buffer open
 nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
+
+" IdentLine Configurations
+"let g:indentLine_setColors = 0
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
