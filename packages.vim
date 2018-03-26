@@ -27,6 +27,9 @@ nmap <leader>bp :BuffergatorMruCyclePrev<cr> " Go to the previous buffer open
 nmap <leader>bn :BuffergatorMruCycleNext<cr> " Go to the next buffer open
 nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
 
+" NERDTree Configurations
+nmap <leader>nt :NERDTreeToggle<cr> " Open NERDTree
+
 " IdentLine Configurations
 "let g:indentLine_setColors = 0
 
