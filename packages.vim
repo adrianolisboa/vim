@@ -8,6 +8,7 @@ if exists('*minpac#init')
     call minpac#add('vim-syntastic/syntastic')
     call minpac#add('vim-airline/vim-airline') "Beautiful statusbar
     call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
+    call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
 
     " Git
     call minpac#add('tpope/vim-fugitive')
