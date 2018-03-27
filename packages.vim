@@ -16,6 +16,7 @@ if exists('*minpac#init')
     " Visuals
     call minpac#add('altercation/vim-colors-solarized')
     call minpac#add('Yggdroot/indentLine')
+    call minpac#add('junegunn/goyo.vim')
 
     " Change Habits 
     call minpac#add('wikitopian/hardmode')
