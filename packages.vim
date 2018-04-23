@@ -33,7 +33,11 @@ nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
 nmap <leader>nt :NERDTreeToggle<cr> " Open NERDTree
 
 " IdentLine Configurations
-"let g:indentLine_setColors = 0
+let g:indentLine_setColors = 0
+
+" Airline Configurations
+let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
