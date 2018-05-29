@@ -2,14 +2,12 @@ set nocompatible
 
 " Enable filetype plugins
 filetype plugin indent on
- 
-syntax enable
 
-" Leader key
+" Map Leader key
 let mapleader=" "
 
 " Theme
-let g:solarized_termtrans = 1
+syntax enable
 set background=dark
 colorscheme solarized
 
