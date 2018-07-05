@@ -10,7 +10,6 @@ Clone the repository on your home folder (`/home/[username]`) with the name `.vi
 
 Now run the following commands to install [*minpac*](https://github.com/k-takata/minpac) package manager.
 
-    $ mkdir -p ~/.vim/pack/minpac/opt
     $ cd ~/.vim/pack/minpac/opt
     $ git clone https://github.com/k-takata/minpac.git
 
