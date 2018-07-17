@@ -48,6 +48,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+nmap <leader>st :SyntasticToggleMode<cr> " Enable and disable syntastic
+nmap <leader>sc :SyntasticCheck<cr> " Check syntax
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
