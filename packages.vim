@@ -10,6 +10,7 @@ if exists('*minpac#init')
     call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
     call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
     call minpac#add('tpope/vim-surround') " Surround everything (cs command)
+    call minpac#add('brooth/far.vim') " Find And Replace
 
     " Git
     call minpac#add('tpope/vim-fugitive')
