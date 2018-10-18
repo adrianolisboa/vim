@@ -26,6 +26,12 @@ if exists('*minpac#init')
     " Development
     call minpac#add('ervandew/supertab') " Complete most used words with tab
     call minpac#add('tpope/vim-endwise') " Helps to end certain structures automatically
+
+    " Ruby
+    call minpac#add('tpope/vim-rails')
+    call minpac#add('tpope/vim-rake')
+    call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
+    call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
 endif
 
 " Buffergator Configurations
