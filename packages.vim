@@ -25,6 +25,7 @@ if exists('*minpac#init')
     
     " Development
     call minpac#add('ervandew/supertab') " Complete most used words with tab
+    call minpac#add('tpope/vim-endwise') " Helps to end certain structures automatically
 endif
 
 " Buffergator Configurations
