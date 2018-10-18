@@ -32,6 +32,7 @@ if exists('*minpac#init')
     call minpac#add('tpope/vim-rake')
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
     call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
+    call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
 endif
 
 " Buffergator Configurations
