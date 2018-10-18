@@ -22,6 +22,9 @@ if exists('*minpac#init')
 
     " Change Habits 
     call minpac#add('wikitopian/hardmode')
+    
+    " Development
+    call minpac#add('ervandew/supertab') " Complete most used words with tab
 endif
 
 " Buffergator Configurations
