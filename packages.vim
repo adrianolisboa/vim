@@ -47,6 +47,7 @@ let NERDTreeShowHidden=1
 nmap <leader>nt :NERDTreeToggle<cr> " Open NERDTree
 
 " IdentLine Configurations
+autocmd Filetype json let g:indentLine_setConceal = 0
 let g:indentLine_char = '┆'
 
 " Airline Configurations
