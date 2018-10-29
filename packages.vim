@@ -43,6 +43,7 @@ nmap <leader>bn :BuffergatorMruCycleNext<cr> " Go to the next buffer open
 nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
 
 " NERDTree Configurations
+let NERDTreeShowHidden=1
 nmap <leader>nt :NERDTreeToggle<cr> " Open NERDTree
 
 " IdentLine Configurations
