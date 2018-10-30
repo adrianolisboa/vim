@@ -26,6 +26,7 @@ if exists('*minpac#init')
     " Development
     call minpac#add('ervandew/supertab') " Complete most used words with tab
     call minpac#add('tpope/vim-endwise') " Helps to end certain structures automatically
+    call minpac#add('editorconfig/editorconfig-vim') " Loads configurations from .editorconfig file
 
     " Ruby
     call minpac#add('tpope/vim-rails')
@@ -64,6 +65,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 nmap <leader>st :SyntasticToggleMode<cr> " Enable and disable syntastic
 nmap <leader>sc :SyntasticCheck<cr> " Check syntax
+
+" EditorConfig Configurations
+let g:EditorConfig_exclude_patterns = ['fugitive://.*'] " plugin works well with Tim Pope's fugitive plugin
+let g:EditorConfig_exclude_patterns = ['scp://.*'] " avoid loading EditorConfig for any remote files over ssh
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
