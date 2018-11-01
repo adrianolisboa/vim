@@ -34,6 +34,11 @@ if exists('*minpac#init')
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
     call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
     call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
+
+    " Javascript
+    call minpac#add('pangloss/vim-javascript')
+    call minpac#add('mxw/vim-jsx') " Syntax highlighting and indenting for JSX
+    call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
 endif
 
 " Buffergator Configurations
@@ -69,6 +74,14 @@ nmap <leader>sc :SyntasticCheck<cr> " Check syntax
 " EditorConfig Configurations
 let g:EditorConfig_exclude_patterns = ['fugitive://.*'] " plugin works well with Tim Pope's fugitive plugin
 let g:EditorConfig_exclude_patterns = ['scp://.*'] " avoid loading EditorConfig for any remote files over ssh
+
+" Vim Javascript Configurations
+let g:javascript_plugin_jsdoc = 1 " Syntax highlighting for http://usejsdoc.org
+let g:javascript_plugin_flow = 1 " Syntax highlighting for https://flowtype.org
+let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
+
+" Vim JSX Configurations
+let g:jsx_ext_required = 1 " Enable syntax highlighting only for JSX files
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
