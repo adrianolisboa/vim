@@ -34,6 +34,7 @@ if exists('*minpac#init')
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
     call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
     call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
+    call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
 
     " Javascript
     call minpac#add('pangloss/vim-javascript')
@@ -82,6 +83,12 @@ let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
 
 " Vim JSX Configurations
 let g:jsx_ext_required = 1 " Enable syntax highlighting only for JSX files
+
+" Vim RSPEC Configurations
+map <Leader>rc :call RunCurrentSpecFile()<CR>
+map <Leader>rs :call RunNearestSpec()<CR>
+map <Leader>rl :call RunLastSpec()<CR>
+map <Leader>ra :call RunAllSpecs()<CR>
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
