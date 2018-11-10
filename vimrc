@@ -57,5 +57,9 @@ vnoremap <down> <nop>
 vnoremap <left> <nop>
 vnoremap <right> <nop>
 
+" Split panel custom mapping
+nmap <leader>sv :vsp<cr> " Split panel in vertical
+nmap <leader>sh :sp<cr> " Split panel in horizontal
+
 " Loads minpac and packages 
 source ~/.vim/packages.vim
