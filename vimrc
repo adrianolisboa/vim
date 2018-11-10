@@ -36,6 +36,8 @@ set visualbell      " No sounds
 set number 
 set relativenumber
 set shell=/bin/bash
+set splitbelow
+set splitright
 
 " Ignore compiled files
 set wildignore+=*.o,*.obj,.git,tmp/**,build/**,coverage/**,node_modules/**
