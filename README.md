@@ -2,9 +2,17 @@
 
 ### Vim Configurations
 
-Some configurations of my vim.
+This repository contains all my current vim configurations.
 
-### Setup
+### Automatic Setup
+
+Clone the repository anywhere and run:
+
+    % sh setup.sh
+
+*This will run all steps described bellow.*
+ 
+### Manual Setup
 
 Clone the repository on your home folder and create a symbolic link to the [*rc*](https://en.wikipedia.org/wiki/Configuration_file) file.
 
@@ -16,6 +24,8 @@ Now run the following commands to clone [*minpac*](https://github.com/k-takata/m
     % cd ~/.vim/pack/minpac/opt
     % git clone https://github.com/k-takata/minpac.git
     % vim +PackUpdate
+
+### Plugins
 
 Each time you want to add new plugins and install add them to *packages.vim* file and run:
 
