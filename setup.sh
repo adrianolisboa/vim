@@ -10,9 +10,7 @@ if [ ! -d "${VIM_FOLDER}" ]; then
     ln -s ${VIM_FOLDER}/vimrc ${HOME}/.vimrc
     cd ~/.vim/pack/minpac/opt
     git clone https://github.com/k-takata/minpac.git
-    cd ${VIM_FOLDER}
-    rm -rf ${GIT_DIR}
     vim +PackUpdate +q
 fi
 
-echo "Well Done! You vim is now configurated and located at: ${VIM_FOLDER}"
+echo "Well Done! You vim is now configurated and all files are moved to: ${VIM_FOLDER}"
