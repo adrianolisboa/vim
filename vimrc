@@ -2,6 +2,7 @@ set nocompatible
 
 " Enable filetype plugins
 filetype plugin indent on
+runtime macros/matchit.vim
 
 " Map Leader key
 let mapleader=" "
