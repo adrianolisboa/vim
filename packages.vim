@@ -35,6 +35,7 @@ if exists('*minpac#init')
     call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
     call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
     call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
+    call minpac#add('nelstrom/vim-textobj-rubyblock') " Custom text object for selecting ruby blocks.
 
     " Javascript
     call minpac#add('pangloss/vim-javascript')
