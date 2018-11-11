@@ -11,6 +11,7 @@ if exists('*minpac#init')
     call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
     call minpac#add('tpope/vim-surround') " Surround everything (cs command)
     call minpac#add('brooth/far.vim') " Find And Replace
+    call minpac#add('kana/vim-textobj-user') " Dependency for nelstrom/vim-textobj-rubyblock
 
     " Git
     call minpac#add('tpope/vim-fugitive')
