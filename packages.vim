@@ -87,6 +87,8 @@ let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
 let g:jsx_ext_required = 1 " Enable syntax highlighting only for JSX files
 
 " Vim RSPEC Configurations
+let g:rspec_command = "!bundle exec rspec --drb {spec}" " Make the plugin run this command by default
+let g:rspec_runner = "os_x_iterm" " This will run the specs in the last session of the current terminal.
 map <Leader>rc :call RunCurrentSpecFile()<CR>
 map <Leader>rs :call RunNearestSpec()<CR>
 map <Leader>rl :call RunLastSpec()<CR>
