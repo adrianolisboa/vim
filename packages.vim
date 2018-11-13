@@ -30,12 +30,12 @@ if exists('*minpac#init')
     call minpac#add('editorconfig/editorconfig-vim') " Loads configurations from .editorconfig file
 
     " Ruby
+    call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
     call minpac#add('tpope/vim-rails')
     call minpac#add('tpope/vim-rake')
-    call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
     call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
-    call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
     call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
+    call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
     call minpac#add('nelstrom/vim-textobj-rubyblock') " Custom text object for selecting ruby blocks.
 
     " Javascript
