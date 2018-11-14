@@ -11,7 +11,11 @@ if exists('*minpac#init')
     call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
     call minpac#add('tpope/vim-surround') " Surround everything (cs command)
     call minpac#add('brooth/far.vim') " Find And Replace
-    call minpac#add('kana/vim-textobj-user') " Dependency for nelstrom/vim-textobj-rubyblock
+
+    " Text objects
+    call minpac#add('kana/vim-textobj-user') " Used for creating your own textobjects
+    call minpac#add('nelstrom/vim-textobj-rubyblock') " Custom text object for selecting ruby blocks.
+    call minpac#add('kana/vim-textobj-function') " Text objects for functions
 
     " Git
     call minpac#add('tpope/vim-fugitive')
@@ -36,7 +40,6 @@ if exists('*minpac#init')
     call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
     call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
     call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
-    call minpac#add('nelstrom/vim-textobj-rubyblock') " Custom text object for selecting ruby blocks.
 
     " Javascript
     call minpac#add('pangloss/vim-javascript')
