@@ -46,6 +46,9 @@ if exists('*minpac#init')
     call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
 endif
 
+" Ctrlp Configurations
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " Ignore listed directories when using ctrlp
+
 " Buffergator Configurations
 let g:buffergator_viewport_split_policy = 'R' " Use menu at the right side of the screen
 let g:buffergator_suppress_keymaps = 1 "Add my own keymaps
