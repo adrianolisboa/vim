@@ -58,6 +58,7 @@ nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
 
 " NERDTree Configurations
 let NERDTreeShowHidden=1
+let g:NERDTreeNodeDelimiter = "\u00a0"
 nmap <leader>nt :NERDTreeToggle<cr> " Open NERDTree
 
 " IdentLine Configurations
