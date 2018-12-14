@@ -101,6 +101,9 @@ map <Leader>rs :call RunNearestSpec()<CR>
 map <Leader>rl :call RunLastSpec()<CR>
 map <Leader>ra :call RunAllSpecs()<CR>
 
+" Hardmode Configurations
+nnoremap <leader>hm <Esc>:call ToggleHardMode()<CR>
+
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
 command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
