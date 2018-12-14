@@ -102,6 +102,7 @@ map <Leader>rl :call RunLastSpec()<CR>
 map <Leader>ra :call RunAllSpecs()<CR>
 
 " Hardmode Configurations
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>hm <Esc>:call ToggleHardMode()<CR>
 
 " Minpac commands
