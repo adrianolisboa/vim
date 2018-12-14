@@ -4,6 +4,7 @@ if exists('*minpac#init')
 
     " Cool Plugins
     call minpac#add('scrooloose/nerdtree')
+    call minpac#add('scrooloose/nerdcommenter') " Comment functions
     call minpac#add('ctrlpvim/ctrlp.vim') "Powerful fuzzy finder
     call minpac#add('vim-syntastic/syntastic')
     call minpac#add('vim-airline/vim-airline') "Beautiful statusbar
