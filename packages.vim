@@ -103,6 +103,7 @@ map <Leader>ra :call RunAllSpecs()<CR>
 
 " Hardtime Configurations
 let g:hardtime_default_on = 1
+let g:hardtime_showmsg = 1
 nnoremap <leader>ht <Esc>:call HardTimeToggle()<CR>
 let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 
