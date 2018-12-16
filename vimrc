@@ -44,20 +44,6 @@ set splitright
 set wildignore+=*.o,*.obj,.git,tmp/**,build/**,coverage/**,node_modules/**
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
-" Changing Habits (remove arrow keys)
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-vnoremap <up> <nop>
-vnoremap <down> <nop>
-vnoremap <left> <nop>
-vnoremap <right> <nop>
-
 " Split panel custom mapping
 nmap <leader>sv :vsp<cr> " Split panel in vertical
 nmap <leader>sh :sp<cr> " Split panel in horizontal

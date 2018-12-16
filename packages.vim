@@ -25,7 +25,7 @@ if exists('*minpac#init')
     call minpac#add('junegunn/goyo.vim')
 
     " Change Habits 
-    call minpac#add('wikitopian/hardmode')
+    call minpac#add('takac/vim-hardtime')
     
     " Development
     call minpac#add('ervandew/supertab') " Complete most used words with tab
@@ -101,9 +101,10 @@ map <Leader>rs :call RunNearestSpec()<CR>
 map <Leader>rl :call RunLastSpec()<CR>
 map <Leader>ra :call RunAllSpecs()<CR>
 
-" Hardmode Configurations
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-nnoremap <leader>hm <Esc>:call ToggleHardMode()<CR>
+" Hardtime Configurations
+let g:hardtime_default_on = 1
+nnoremap <leader>ht <Esc>:call HardTimeToggle()<CR>
+let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
