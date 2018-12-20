@@ -105,7 +105,7 @@ map <Leader>ra :call RunAllSpecs()<CR>
 let g:hardtime_default_on = 1 " Enabled by default
 let g:hardtime_showmsg = 1 " Show messages
 let g:hardtime_maxcount = 2 " Allow to press the key max of 2 times
-let g:hardtime_ignore_buffer_patterns = [ "CustomPatt[ae]rn", "NERD.*" ] " Disable it for nerdtree
+let g:hardtime_ignore_buffer_patterns = [ "CustomPatt[ae]rn", "NERD.*", "Buffergator*" ] " Disable it for nerdtree
 let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 nnoremap <leader>ht <Esc>:call HardTimeToggle()<CR>
 " Minpac commands
