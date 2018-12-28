@@ -114,7 +114,7 @@ nnoremap <leader>ht <Esc>:call HardTimeToggle()<CR>
 " Vim Fugitive Configurations
 nmap <leader>gb :Gblame<cr> " Git blame
 nmap <leader>gs :Gstatus<cr> " Git status
-nmap <leader>gc :execute ":Git checkout %"<CR> " Exclude current file editions
+nmap <leader>gc :if confirm('Revert file to original status?', "&Yes\n&No", 1)==1 <Bar> :execute ":Git checkout %" <Bar> endif<CR><CR> " Ask for confirmation, then checkout modifications
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
