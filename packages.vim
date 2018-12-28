@@ -110,6 +110,12 @@ let g:hardtime_maxcount = 2 " Allow to press the key max of 2 times
 let g:hardtime_ignore_buffer_patterns = [ "CustomPatt[ae]rn", "NERD.*", "Buffergator*" ] " Disable it for nerdtree
 let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 nnoremap <leader>ht <Esc>:call HardTimeToggle()<CR>
+
+" Vim Fugitive Configurations
+nmap <leader>gb :Gblame<cr> " Git blame
+nmap <leader>gs :Gstatus<cr> " Git status
+nmap <leader>gc :execute ":Git checkout %"<CR> " Exclude current file editions
+
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
 command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
