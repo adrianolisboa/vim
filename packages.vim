@@ -8,7 +8,8 @@ if exists('*minpac#init')
     call minpac#add('xuyuanp/nerdtree-git-plugin') " Show git file statuses at nerdtree
     call minpac#add('ctrlpvim/ctrlp.vim') "Powerful fuzzy finder
     call minpac#add('vim-syntastic/syntastic')
-    call minpac#add('vim-airline/vim-airline') "Beautiful statusbar
+    call minpac#add('vim-airline/vim-airline') " Beautiful statusbar
+    call minpac#add('vim-airline/vim-airline-themes') " Themes for vim-airline
     call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
     call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
     call minpac#add('tpope/vim-surround') " Surround everything (cs command)
