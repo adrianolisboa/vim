@@ -16,6 +16,7 @@ if exists('*minpac#init')
     call minpac#add('brooth/far.vim') " Find And Replace
     call minpac#add('tpope/vim-fugitive') " Git wrapper for VIM
     call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
+    call minpac#add('rizzatti/dash.vim') " Add support for searching documentations using dash
 
     " Text objects
     call minpac#add('kana/vim-textobj-user') " Used for creating your own textobjects
