@@ -36,6 +36,7 @@ if exists('*minpac#init')
     call minpac#add('ervandew/supertab') " Complete most used words with tab
     call minpac#add('tpope/vim-endwise') " Helps to end certain structures automatically
     call minpac#add('editorconfig/editorconfig-vim') " Loads configurations from .editorconfig file
+    call minpac#add('janko-m/vim-test') " Wrapper for running tests
 
     " Ruby
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
@@ -118,6 +119,13 @@ nnoremap <leader>ht <Esc>:call HardTimeToggle()<CR>
 nmap <leader>gb :Gblame<cr> " Git blame
 nmap <leader>gs :Gstatus<cr> " Git status
 nmap <leader>gc :if confirm('Revert file to original status?', "&Yes\n&No", 1)==1 <Bar> :execute ":Git checkout %" <Bar> endif<CR><CR> " Ask for confirmation, then checkout modifications
+
+" Vim Test Configurations
+nmap <leader>tn :TestNearest<CR>
+nmap <leader>tf :TestFile<CR>
+nmap <leader>ts :TestSuite<CR>
+nmap <leader>tl :TestLast<CR>
+nmap <leader>tv :TestVisit<CR>
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
