@@ -17,6 +17,7 @@ if exists('*minpac#init')
     call minpac#add('tpope/vim-fugitive') " Git wrapper for VIM
     call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
     call minpac#add('rizzatti/dash.vim') " Add support for searching documentations using dash
+    call minpac#add('godlygeek/tabular') " Use Tab or Tabularize to automatically ident selected lines
 
     " Text objects
     call minpac#add('kana/vim-textobj-user') " Used for creating your own textobjects
