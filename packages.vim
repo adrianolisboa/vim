@@ -127,6 +127,9 @@ nmap <leader>ts :TestSuite<CR>
 nmap <leader>tl :TestLast<CR>
 nmap <leader>tv :TestVisit<CR>
 
+" The Silver Searcher Configurations
+nmap <leader>a :Ag 
+
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
 command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
