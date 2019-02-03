@@ -27,7 +27,7 @@ if exists('*minpac#init')
     " Visuals
     call minpac#add('altercation/vim-colors-solarized')
     call minpac#add('Yggdroot/indentLine')
-    call minpac#add('junegunn/goyo.vim')
+    call minpac#add('junegunn/goyo.vim') " Distraction-free writing in Vim.
 
     " Change Habits 
     call minpac#add('takac/vim-hardtime')
@@ -42,10 +42,10 @@ if exists('*minpac#init')
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
     call minpac#add('tpope/vim-rails')
     call minpac#add('tpope/vim-rake')
-    call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
-    call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
-    call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
-    call minpac#add('astashov/vim-ruby-debugger') " Interactive Ruby debugger
+    "call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
+    "call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
+    "call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
+    "call minpac#add('astashov/vim-ruby-debugger') " Interactive Ruby debugger
 
     " Javascript
     call minpac#add('pangloss/vim-javascript')
@@ -100,12 +100,12 @@ let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
 let g:jsx_ext_required = 1 " Enable syntax highlighting only for JSX files
 
 " Vim RSPEC Configurations
-let g:rspec_command = "!bundle exec rspec --drb {spec}" " Make the plugin run this command by default
-let g:rspec_runner = "os_x_iterm" " This will run the specs in the last session of the current terminal.
-map <Leader>rc :call RunCurrentSpecFile()<CR>
-map <Leader>rs :call RunNearestSpec()<CR>
-map <Leader>rl :call RunLastSpec()<CR>
-map <Leader>ra :call RunAllSpecs()<CR>
+"let g:rspec_command = "!bundle exec rspec --drb {spec}" " Make the plugin run this command by default
+"let g:rspec_runner = "os_x_iterm" " This will run the specs in the last session of the current terminal.
+"map <Leader>rc :call RunCurrentSpecFile()<CR>
+"map <Leader>rs :call RunNearestSpec()<CR>
+"map <Leader>rl :call RunLastSpec()<CR>
+"map <Leader>ra :call RunAllSpecs()<CR>
 
 " Hardtime Configurations
 let g:hardtime_default_on = 1 " Enabled by default
