@@ -10,7 +10,7 @@ if exists('*minpac#init')
     call minpac#add('vim-syntastic/syntastic')
     call minpac#add('vim-airline/vim-airline') " Beautiful statusbar
     call minpac#add('vim-airline/vim-airline-themes') " Themes for vim-airline
-    call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
+    "call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
     call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
     call minpac#add('tpope/vim-surround') " Surround everything (cs command)
     call minpac#add('brooth/far.vim') " Find And Replace
@@ -57,11 +57,11 @@ endif
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " Ignore listed directories when using ctrlp
 
 " Buffergator Configurations
-let g:buffergator_viewport_split_policy = 'R' " Use menu at the right side of the screen
-let g:buffergator_suppress_keymaps = 1 "Add my own keymaps
-nmap <leader>bp :BuffergatorMruCyclePrev<cr> " Go to the previous buffer open
-nmap <leader>bn :BuffergatorMruCycleNext<cr> " Go to the next buffer open
-nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
+"let g:buffergator_viewport_split_policy = 'R' " Use menu at the right side of the screen
+"let g:buffergator_suppress_keymaps = 1 "Add my own keymaps
+"nmap <leader>bp :BuffergatorMruCyclePrev<cr> " Go to the previous buffer open
+"nmap <leader>bn :BuffergatorMruCycleNext<cr> " Go to the next buffer open
+"nmap <leader>bl :BuffergatorOpen<cr> " View the entire list of buffers open
 
 " NERDTree Configurations
 let NERDTreeShowHidden=1

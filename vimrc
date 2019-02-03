@@ -50,5 +50,11 @@ nmap <leader>sh :sp<cr> " Split panel in horizontal
 " turn off search highlight
 nnoremap <leader>scl :nohlsearch<cr>
 
+" Buffer configurations
+nnoremap <leader>bl :buffers<cr>:b<space>
+nnoremap <leader>bn :bn<cr>
+nnoremap <leader>bp :bp<cr>
+nnoremap <leader>bd :bd<cr>
+
 " Loads minpac and packages 
 source ~/.vim/packages.vim
