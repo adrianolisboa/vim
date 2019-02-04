@@ -48,7 +48,10 @@ nmap <leader>sv :vsp<cr> " Split panel in vertical
 nmap <leader>sh :sp<cr> " Split panel in horizontal
 
 " turn off search highlight
-nnoremap <leader>scl :nohlsearch<cr>
+nnoremap <leader>nohl :nohlsearch<cr>
+
+" Ident json using python
+nnoremap <leader>jl :%!python -m json.tool<cr>
 
 " Buffer configurations
 nnoremap <leader>bl :buffers<cr>:b<space>
