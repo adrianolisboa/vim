@@ -55,6 +55,8 @@ endif
 
 " Ctrlp Configurations
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " Ignore listed directories when using ctrlp
+" Open Buffer Search
+nmap <leader>bs :CtrlPBuffer<cr>
 
 " Buffergator Configurations
 "let g:buffergator_viewport_split_policy = 'R' " Use menu at the right side of the screen
