@@ -44,7 +44,7 @@ if exists('*minpac#init')
     call minpac#add('tpope/vim-rake')
     "call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
     "call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
-    "call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
+    call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
     "call minpac#add('astashov/vim-ruby-debugger') " Interactive Ruby debugger
 
     " Javascript
@@ -131,6 +131,17 @@ nmap <leader>tv :TestVisit<CR>
 
 " The Silver Searcher Configurations
 nmap <leader>a :Ag 
+
+" Ruby Refactoring Plugin Configurations
+nnoremap <leader>rap  :RAddParameter<cr>
+nnoremap <leader>rcpc :RConvertPostConditional<cr>
+nnoremap <leader>rel  :RExtractLet<cr>
+vnoremap <leader>rec  :RExtractConstant<cr>
+vnoremap <leader>relv :RExtractLocalVariable<cr>
+nnoremap <leader>rit  :RInlineTemp<cr>
+vnoremap <leader>rrlv :RRenameLocalVariable<cr>
+vnoremap <leader>rriv :RRenameInstanceVariable<cr>
+vnoremap <leader>rem  :RExtractMethod<cr>
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
