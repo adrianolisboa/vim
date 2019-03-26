@@ -13,7 +13,7 @@ if exists('*minpac#init')
     "call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
     call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
     call minpac#add('tpope/vim-surround') " Surround everything (cs command)
-    call minpac#add('brooth/far.vim') " Find And Replace
+    "call minpac#add('brooth/far.vim') " Find And Replace
     call minpac#add('tpope/vim-fugitive') " Git wrapper for VIM
     call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
     call minpac#add('rizzatti/dash.vim') " Add support for searching documentations using dash
@@ -46,6 +46,7 @@ if exists('*minpac#init')
     "call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
     call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
     "call minpac#add('astashov/vim-ruby-debugger') " Interactive Ruby debugger
+    call minpac#add('sentientmonkey/vim-flog') " Indicate Flog number of complexity
 
     " Javascript
     call minpac#add('pangloss/vim-javascript')
@@ -142,6 +143,9 @@ nnoremap <leader>rit  :RInlineTemp<cr>
 vnoremap <leader>rrlv :RRenameLocalVariable<cr>
 vnoremap <leader>rriv :RRenameInstanceVariable<cr>
 vnoremap <leader>rem  :RExtractMethod<cr>
+
+" Flog Configurations
+nmap <leader>f :call ToggleFlog()<cr>
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
