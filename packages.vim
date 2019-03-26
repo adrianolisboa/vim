@@ -46,7 +46,7 @@ if exists('*minpac#init')
     "call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
     call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
     "call minpac#add('astashov/vim-ruby-debugger') " Interactive Ruby debugger
-    call minpac#add('sentientmonkey/vim-flog') " Indicate Flog number of complexity
+    "call minpac#add('sentientmonkey/vim-flog') " Indicate Flog number of complexity
 
     " Javascript
     call minpac#add('pangloss/vim-javascript')
@@ -145,7 +145,7 @@ vnoremap <leader>rriv :RRenameInstanceVariable<cr>
 vnoremap <leader>rem  :RExtractMethod<cr>
 
 " Flog Configurations
-nmap <leader>f :call ToggleFlog()<cr>
+" nmap <leader>f :call ToggleFlog()<cr>
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
