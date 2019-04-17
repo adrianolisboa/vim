@@ -59,5 +59,8 @@ nnoremap <leader>bn :bn<cr>
 nnoremap <leader>bp :bp<cr>
 nnoremap <leader>bd :bd<cr>
 
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
 " Loads minpac and packages 
 source ~/.vim/packages.vim
