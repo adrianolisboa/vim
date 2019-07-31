@@ -37,7 +37,7 @@ if exists('*minpac#init')
     call minpac#add('tpope/vim-endwise') " Helps to end certain structures automatically
     call minpac#add('editorconfig/editorconfig-vim') " Loads configurations from .editorconfig file
     call minpac#add('janko-m/vim-test') " Wrapper for running tests
-    call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
+    "call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
 
     " Ruby
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
