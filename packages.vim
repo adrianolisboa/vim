@@ -52,6 +52,10 @@ if exists('*minpac#init')
     call minpac#add('pangloss/vim-javascript')
     call minpac#add('mxw/vim-jsx') " Syntax highlighting and indenting for JSX
     call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
+
+    " Flutter
+    call minpac#add('dart-lang/dart-vim-plugin') " 
+    call minpac#add('thosakwe/vim-flutter') " Vim commands for Flutter, including hot-reload-on-save and more.
 endif
 
 " Ctrlp Configurations
@@ -144,6 +148,13 @@ nnoremap <leader>rit  :RInlineTemp<cr>
 vnoremap <leader>rrlv :RRenameLocalVariable<cr>
 vnoremap <leader>rriv :RRenameInstanceVariable<cr>
 vnoremap <leader>rem  :RExtractMethod<cr>
+
+" Vim Flutter Configurations
+nnoremap <leader>fa :FlutterRun<cr>
+nnoremap <leader>fq :FlutterQuit<cr>
+nnoremap <leader>fr :FlutterHotReload<cr>
+nnoremap <leader>fR :FlutterHotRestart<cr>
+nnoremap <leader>fD :FlutterVisualDebug<cr>
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
