@@ -56,6 +56,9 @@ if exists('*minpac#init')
     " Flutter
     call minpac#add('dart-lang/dart-vim-plugin') " 
     call minpac#add('thosakwe/vim-flutter') " Vim commands for Flutter, including hot-reload-on-save and more.
+
+    " Elixir
+    call minpac#add('elixir-editors/vim-elixir') " Syntax highlighting, Filetype detection, Automatic indentation
 endif
 
 " Ctrlp Configurations
