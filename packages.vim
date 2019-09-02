@@ -59,6 +59,7 @@ if exists('*minpac#init')
 
     " Elixir
     call minpac#add('elixir-editors/vim-elixir') " Syntax highlighting, Filetype detection, Automatic indentation
+    call minpac#add('mhinz/vim-mix-format') " Run mix formatter asynchronously (:MixFormat, :verb MixFormat, :MixFormatDiff)
 endif
 
 " Ctrlp Configurations
@@ -158,6 +159,9 @@ nnoremap <leader>fq :FlutterQuit<cr>
 nnoremap <leader>fr :FlutterHotReload<cr>
 nnoremap <leader>fR :FlutterHotRestart<cr>
 nnoremap <leader>fD :FlutterVisualDebug<cr>
+
+" Vim Mix Format Configurations
+let g:mix_format_on_save = 1
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
