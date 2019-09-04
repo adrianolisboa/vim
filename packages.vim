@@ -60,6 +60,7 @@ if exists('*minpac#init')
     " Elixir
     call minpac#add('elixir-editors/vim-elixir') " Syntax highlighting, Filetype detection, Automatic indentation
     call minpac#add('mhinz/vim-mix-format') " Run mix formatter asynchronously (:MixFormat, :verb MixFormat, :MixFormatDiff)
+    call minpac#add('slashmili/alchemist.vim') " Completion for Modules and functions, and much more...
 endif
 
 " Ctrlp Configurations
