@@ -30,7 +30,7 @@ if exists('*minpac#init')
     call minpac#add('junegunn/goyo.vim') " Distraction-free writing in Vim.
 
     " Change Habits 
-    call minpac#add('takac/vim-hardtime')
+    "call minpac#add('takac/vim-hardtime')
     
     " Development
     call minpac#add('ervandew/supertab') " Complete most used words with tab
