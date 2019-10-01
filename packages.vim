@@ -162,7 +162,7 @@ nnoremap <leader>fR :FlutterHotRestart<cr>
 nnoremap <leader>fD :FlutterVisualDebug<cr>
 
 " Vim Mix Format Configurations
-let g:mix_format_on_save = 1
+" let g:mix_format_on_save = 1
 nnoremap <leader>mf :MixFormat<cr>
 nnoremap <leader>mfv :verb MixFormat<cr>
 nnoremap <leader>mfd :MixFormatDiff<cr>
