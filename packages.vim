@@ -38,7 +38,7 @@ if exists('*minpac#init')
     call minpac#add('editorconfig/editorconfig-vim') " Loads configurations from .editorconfig file
     call minpac#add('janko-m/vim-test') " Wrapper for running tests
     "call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
-    call minpac#add('zxqfl/tabnine-vim') " Smart Compose for code.
+    "call minpac#add('zxqfl/tabnine-vim') " Smart Compose for code.
 
     " Ruby
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
