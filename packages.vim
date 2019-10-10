@@ -37,7 +37,7 @@ if exists('*minpac#init')
     call minpac#add('tpope/vim-endwise') " Helps to end certain structures automatically
     call minpac#add('editorconfig/editorconfig-vim') " Loads configurations from .editorconfig file
     call minpac#add('janko-m/vim-test') " Wrapper for running tests
-    "call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
+    call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
     "call minpac#add('zxqfl/tabnine-vim') " Smart Compose for code.
 
     " Ruby
@@ -62,6 +62,9 @@ if exists('*minpac#init')
     call minpac#add('elixir-editors/vim-elixir') " Syntax highlighting, Filetype detection, Automatic indentation
     call minpac#add('mhinz/vim-mix-format') " Run mix formatter asynchronously (:MixFormat, :verb MixFormat, :MixFormatDiff)
     call minpac#add('slashmili/alchemist.vim') " Completion for Modules and functions, and much more...
+    call minpac#add('neomake/neomake') " Execute code checks to find mistakes in the currently edited file
+    "call minpac#add('c-brenn/phoenix.vim') "
+    "call minpac#add('tpope/vim-projectionist') "
 endif
 
 " Ctrlp Configurations
@@ -167,6 +170,10 @@ nnoremap <leader>fD :FlutterVisualDebug<cr>
 nnoremap <leader>mf :MixFormat<cr>
 nnoremap <leader>mfv :verb MixFormat<cr>
 nnoremap <leader>mfd :MixFormatDiff<cr>
+
+
+" Vim alchemist
+let g:alchemist_tag_disable = 1
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
