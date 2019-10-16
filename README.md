@@ -10,13 +10,13 @@ Clone the repository anywhere and run:
 
     % sh setup.sh
 
-*This will run all steps described bellow.*
+*This will run all steps described bellow (except for cloning the repo phase).*
  
 ### Manual Setup
 
 Clone the repository on your home folder and create a symbolic link to the [*rc*](https://en.wikipedia.org/wiki/Configuration_file) file.
 
-    % git clone https://github.com/adrianolisboa/vim.git ${HOME}/.vim
+    % git clone git@github.com:adrianolisboa/vim.git
     % ln -s ${HOME}/.vim/vimrc ${HOME}/.vimrc
 
 Now run the following commands to clone [*minpac*](https://github.com/k-takata/minpac) package manager and install the plugins
