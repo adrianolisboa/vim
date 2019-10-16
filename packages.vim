@@ -21,7 +21,7 @@ if exists('*minpac#init')
 
     " Text objects
     call minpac#add('kana/vim-textobj-user') " Used for creating your own textobjects
-    call minpac#add('nelstrom/vim-textobj-rubyblock') " Custom text object for selecting ruby blocks.
+    "call minpac#add('nelstrom/vim-textobj-rubyblock') " Custom text object for selecting ruby blocks.
     call minpac#add('kana/vim-textobj-function') " Text objects for functions
 
     " Visuals
@@ -42,11 +42,11 @@ if exists('*minpac#init')
 
     " Ruby
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
-    call minpac#add('tpope/vim-rails')
-    call minpac#add('tpope/vim-rake')
+    "call minpac#add('tpope/vim-rails')
+    "call minpac#add('tpope/vim-rake')
     "call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
     "call minpac#add('thoughtbot/vim-rspec') " Allow to run rspec from vim
-    call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
+    "call minpac#add('ecomba/vim-ruby-refactoring') " Ruby Refactoring Tool
     "call minpac#add('astashov/vim-ruby-debugger') " Interactive Ruby debugger
 
     " Javascript
@@ -148,15 +148,15 @@ nmap <leader>tv :TestVisit<CR>
 nmap <leader>a :Ag 
 
 " Ruby Refactoring Plugin Configurations
-nnoremap <leader>rap  :RAddParameter<cr>
-nnoremap <leader>rcpc :RConvertPostConditional<cr>
-nnoremap <leader>rel  :RExtractLet<cr>
-vnoremap <leader>rec  :RExtractConstant<cr>
-vnoremap <leader>relv :RExtractLocalVariable<cr>
-nnoremap <leader>rit  :RInlineTemp<cr>
-vnoremap <leader>rrlv :RRenameLocalVariable<cr>
-vnoremap <leader>rriv :RRenameInstanceVariable<cr>
-vnoremap <leader>rem  :RExtractMethod<cr>
+"nnoremap <leader>rap  :RAddParameter<cr>
+"nnoremap <leader>rcpc :RConvertPostConditional<cr>
+"nnoremap <leader>rel  :RExtractLet<cr>
+"vnoremap <leader>rec  :RExtractConstant<cr>
+"vnoremap <leader>relv :RExtractLocalVariable<cr>
+"nnoremap <leader>rit  :RInlineTemp<cr>
+"vnoremap <leader>rrlv :RRenameLocalVariable<cr>
+"vnoremap <leader>rriv :RRenameInstanceVariable<cr>
+"vnoremap <leader>rem  :RExtractMethod<cr>
 
 " Vim Flutter Configurations
 nnoremap <leader>df :DartFmt<cr>
@@ -171,7 +171,6 @@ nnoremap <leader>fD :FlutterVisualDebug<cr>
 nnoremap <leader>mf :MixFormat<cr>
 nnoremap <leader>mfv :verb MixFormat<cr>
 nnoremap <leader>mfd :MixFormatDiff<cr>
-
 
 " Vim alchemist
 let g:alchemist_tag_disable = 1
