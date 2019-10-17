@@ -166,7 +166,6 @@ nnoremap <leader>flhr :FlutterHotReload<cr>
 nnoremap <leader>flhR :FlutterHotRestart<cr>
 nnoremap <leader>fld :FlutterVisualDebug<cr>
 nnoremap <leader>flem :FlutterEmulators<cr>
-nnoremap <leader>fleml :FlutterEmulatorsLaunch<cr>
 nnoremap <leader>fldv :FlutterDevices<cr>
 
 " Vim Mix Format Configurations
