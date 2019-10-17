@@ -160,11 +160,14 @@ nmap <leader>a :Ag
 
 " Vim Flutter Configurations
 nnoremap <leader>df :DartFmt<cr>
-nnoremap <leader>fr :FlutterRun<cr>
-nnoremap <leader>fq :FlutterQuit<cr>
-nnoremap <leader>fhr :FlutterHotReload<cr>
-nnoremap <leader>fhR :FlutterHotRestart<cr>
-nnoremap <leader>fD :FlutterVisualDebug<cr>
+nnoremap <leader>flr :FlutterRun<cr>
+nnoremap <leader>flq :FlutterQuit<cr>
+nnoremap <leader>flr :FlutterHotReload<cr>
+nnoremap <leader>flrr :FlutterHotRestart<cr>
+nnoremap <leader>fld :FlutterVisualDebug<cr>
+nnoremap <leader>flem :FlutterEmulators<cr>
+nnoremap <leader>fleml :FlutterEmulatorsLaunch<cr>
+nnoremap <leader>fldv :FlutterDevices<cr>
 
 " Vim Mix Format Configurations
 " let g:mix_format_on_save = 1
