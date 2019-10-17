@@ -162,8 +162,8 @@ nmap <leader>a :Ag
 nnoremap <leader>df :DartFmt<cr>
 nnoremap <leader>flr :FlutterRun<cr>
 nnoremap <leader>flq :FlutterQuit<cr>
-nnoremap <leader>flr :FlutterHotReload<cr>
-nnoremap <leader>flrr :FlutterHotRestart<cr>
+nnoremap <leader>flhr :FlutterHotReload<cr>
+nnoremap <leader>flhR :FlutterHotRestart<cr>
 nnoremap <leader>fld :FlutterVisualDebug<cr>
 nnoremap <leader>flem :FlutterEmulators<cr>
 nnoremap <leader>fleml :FlutterEmulatorsLaunch<cr>
