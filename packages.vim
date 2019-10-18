@@ -12,22 +12,22 @@ if exists('*minpac#init')
     call minpac#add('vim-airline/vim-airline-themes') " Themes for vim-airline
     "call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
     call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
-    call minpac#add('tpope/vim-surround') " Surround everything (cs command)
+    "call minpac#add('tpope/vim-surround') " Surround everything (cs command)
     call minpac#add('brooth/far.vim') " Find And Replace
     call minpac#add('tpope/vim-fugitive') " Git wrapper for VIM
     call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
-    call minpac#add('rizzatti/dash.vim') " Add support for searching documentations using dash
+    "call minpac#add('rizzatti/dash.vim') " Add support for searching documentations using dash
     call minpac#add('godlygeek/tabular') " Use Tab or Tabularize to automatically ident selected lines
 
     " Text objects
-    call minpac#add('kana/vim-textobj-user') " Used for creating your own textobjects
+    "call minpac#add('kana/vim-textobj-user') " Used for creating your own textobjects
     "call minpac#add('nelstrom/vim-textobj-rubyblock') " Custom text object for selecting ruby blocks.
-    call minpac#add('kana/vim-textobj-function') " Text objects for functions
+    "call minpac#add('kana/vim-textobj-function') " Text objects for functions
 
     " Visuals
     call minpac#add('altercation/vim-colors-solarized')
     call minpac#add('Yggdroot/indentLine')
-    call minpac#add('junegunn/goyo.vim') " Distraction-free writing in Vim.
+    "call minpac#add('junegunn/goyo.vim') " Distraction-free writing in Vim.
 
     " Change Habits 
     "call minpac#add('takac/vim-hardtime')
