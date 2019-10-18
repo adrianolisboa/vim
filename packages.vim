@@ -57,6 +57,8 @@ if exists('*minpac#init')
     " Flutter
     call minpac#add('dart-lang/dart-vim-plugin') " Provides filetype detection, syntax highlighting, and indentation for Dart.
     call minpac#add('thosakwe/vim-flutter') " Vim commands for Flutter, including hot-reload-on-save and more.
+    call minpac#add('natebosch/vim-lsc') " Vim Language Server Client
+    call minpac#add('natebosch/vim-lsc-dart') "
 
     " Elixir
     call minpac#add('elixir-editors/vim-elixir') " Syntax highlighting, Filetype detection, Automatic indentation
@@ -176,6 +178,25 @@ nnoremap <leader>mfd :MixFormatDiff<cr>
 
 " Vim alchemist
 let g:alchemist_tag_disable = 1
+
+" Vim Language Server Client
+let g:lsc_server_commands = {'dart': 'dart_language_server'}
+let g:lsc_auto_map = v:true " Use all the defaults (recommended):
+let g:lsc_auto_map = {
+    \ 'GoToDefinition': '<C-]>',
+    \ 'GoToDefinitionSplit': ['<C-W>]', '<C-W><C-]>'],
+    \ 'FindReferences': 'gr',
+    \ 'NextReference': '<C-n>',
+    \ 'PreviousReference': '<C-p>',
+    \ 'FindImplementations': 'gI',
+    \ 'FindCodeActions': 'ga',
+    \ 'Rename': 'gR',
+    \ 'ShowHover': v:true,
+    \ 'DocumentSymbol': 'go',
+    \ 'WorkspaceSymbol': 'gS',
+    \ 'SignatureHelp': 'gm',
+    \ 'Completion': 'completefunc',
+    \}
 
 " Minpac commands
 command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
