@@ -39,6 +39,8 @@ if exists('*minpac#init')
     call minpac#add('janko-m/vim-test') " Wrapper for running tests
     call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
     "call minpac#add('zxqfl/tabnine-vim') " Smart Compose for code.
+    call minpac#add('natebosch/vim-lsc') " Vim Language Server Client
+    "call minpac#add('dense-analysis/ale') " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP)
 
     " Ruby
     call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
@@ -57,7 +59,6 @@ if exists('*minpac#init')
     " Flutter
     call minpac#add('dart-lang/dart-vim-plugin') " Provides filetype detection, syntax highlighting, and indentation for Dart.
     call minpac#add('thosakwe/vim-flutter') " Vim commands for Flutter, including hot-reload-on-save and more.
-    call minpac#add('natebosch/vim-lsc') " Vim Language Server Client
     call minpac#add('natebosch/vim-lsc-dart') "
 
     " Elixir
