@@ -70,6 +70,10 @@ if exists('*minpac#init')
     "call minpac#add('tpope/vim-projectionist') "
 endif
 
+" Pack Commands
+nnoremap <leader>pkc :PackClean<cr>
+nnoremap <leader>pku :PackUpdate<cr>
+
 " Ctrlp Configurations
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " Ignore listed directories when using ctrlp
 
