@@ -54,7 +54,7 @@ if exists('*minpac#init')
     " Javascript
     call minpac#add('pangloss/vim-javascript')
     call minpac#add('mxw/vim-jsx') " Syntax highlighting and indenting for JSX
-    call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
+    "call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
 
     " Flutter
     call minpac#add('dart-lang/dart-vim-plugin') " Provides filetype detection, syntax highlighting, and indentation for Dart.
@@ -93,8 +93,8 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 nmap <leader>nt :NERDTreeToggle<cr> " Open NERDTree
 
 " IdentLine Configurations
-autocmd Filetype json let g:indentLine_setConceal = 0
-let g:indentLine_char = '┆'
+"autocmd Filetype json let g:indentLine_setConceal = 0
+"let g:indentLine_char = '┆'
 
 " Airline Configurations
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
