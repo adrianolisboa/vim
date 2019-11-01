@@ -16,7 +16,6 @@ if exists('*minpac#init')
     call minpac#add('brooth/far.vim') " Find And Replace
     call minpac#add('tpope/vim-fugitive') " Git wrapper for VIM
     call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
-    "call minpac#add('rizzatti/dash.vim') " Add support for searching documentations using dash
     call minpac#add('godlygeek/tabular') " Use Tab or Tabularize to automatically ident selected lines
 
     " Text objects
@@ -38,7 +37,6 @@ if exists('*minpac#init')
     call minpac#add('editorconfig/editorconfig-vim') " Loads configurations from .editorconfig file
     call minpac#add('janko-m/vim-test') " Wrapper for running tests
     call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
-    "call minpac#add('zxqfl/tabnine-vim') " Smart Compose for code.
     call minpac#add('natebosch/vim-lsc') " Vim Language Server Client
     "call minpac#add('dense-analysis/ale') " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP)
 
