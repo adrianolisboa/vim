@@ -53,7 +53,7 @@ if exists('*minpac#init')
     " Javascript
     call minpac#add('pangloss/vim-javascript')
     call minpac#add('maksimr/vim-jsbeautify') " Allows use of jsbeautifier
-    "call minpac#add('mxw/vim-jsx') " Syntax highlighting and indenting for JSX
+    call minpac#add('maxmellon/vim-jsx-pretty') " Syntax highlighting and indenting for JSX
     "call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
 
     " Flutter
@@ -119,10 +119,23 @@ let g:EditorConfig_exclude_patterns = ['scp://.*'] " avoid loading EditorConfig 
 let g:javascript_plugin_jsdoc = 1 " Syntax highlighting for http://usejsdoc.org
 let g:javascript_plugin_flow = 1 " Syntax highlighting for https://flowtype.org
 let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
+set conceallevel=1
+let g:javascript_conceal_function             = "ƒ"
+let g:javascript_conceal_null                 = "ø"
+let g:javascript_conceal_this                 = "@"
+let g:javascript_conceal_return               = "⇚"
+let g:javascript_conceal_undefined            = "¿"
+let g:javascript_conceal_NaN                  = "ℕ"
+let g:javascript_conceal_prototype            = "¶"
+let g:javascript_conceal_static               = "•"
+let g:javascript_conceal_super                = "Ω"
+let g:javascript_conceal_arrow_function       = "⇒"
+let g:javascript_conceal_noarg_arrow_function = "🞅"
+let g:javascript_conceal_underscore_arrow_function = "🞅"
 nmap <leader>jf :call JsBeautify()<cr>" Formart Javascript Files
 
 " Vim JSX Configurations
-let g:jsx_ext_required = 1 " Enable syntax highlighting only for JSX files
+let g:vim_jsx_pretty_colorful_config = 10
 
 " Vim RSPEC Configurations
 "let g:rspec_command = "!bundle exec rspec --drb {spec}" " Make the plugin run this command by default
