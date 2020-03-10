@@ -7,7 +7,7 @@ if exists('*minpac#init')
     call minpac#add('scrooloose/nerdcommenter') " Comment functions
     call minpac#add('xuyuanp/nerdtree-git-plugin') " Show git file statuses at nerdtree
     call minpac#add('ctrlpvim/ctrlp.vim') "Powerful fuzzy finder
-    call minpac#add('vim-syntastic/syntastic')
+    "call minpac#add('vim-syntastic/syntastic')
     call minpac#add('vim-airline/vim-airline') " Beautiful statusbar
     call minpac#add('vim-airline/vim-airline-themes') " Themes for vim-airline
     "call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
@@ -39,6 +39,11 @@ if exists('*minpac#init')
     call minpac#add('janko-m/vim-test') " Wrapper for running tests
     call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
     call minpac#add('natebosch/vim-lsc') " Vim Language Server Client
+
+   " Google Code Fmt
+    call minpac#add('google/vim-maktaba') " Utility for syntax-aware code formatting.
+    call minpac#add('google/vim-codefmt') " Utility for syntax-aware code formatting.
+    call minpac#add('google/vim-glaive')  " Used to configure codefmt's maktaba flags
     "call minpac#add('dense-analysis/ale') " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP)
 
     " Ruby
@@ -53,7 +58,7 @@ if exists('*minpac#init')
     " Javascript
     call minpac#add('pangloss/vim-javascript')
     call minpac#add('maksimr/vim-jsbeautify') " Allows use of jsbeautifier
-    call minpac#add('maxmellon/vim-jsx-pretty') " Syntax highlighting and indenting for JSX
+    "call minpac#add('maxmellon/vim-jsx-pretty') " Syntax highlighting and indenting for JSX
     "call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
 
     " Flutter
@@ -101,15 +106,15 @@ let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
 " Syntastic Configurations
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-nmap <leader>st :SyntasticToggleMode<cr> " Enable and disable syntastic
-nmap <leader>sc :SyntasticCheck<cr> " Check syntax
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"nmap <leader>st :SyntasticToggleMode<cr> " Enable and disable syntastic
+"nmap <leader>sc :SyntasticCheck<cr> " Check syntax
 
 " EditorConfig Configurations
 let g:EditorConfig_exclude_patterns = ['fugitive://.*'] " plugin works well with Tim Pope's fugitive plugin
@@ -133,6 +138,10 @@ let g:javascript_conceal_arrow_function       = "⇒"
 let g:javascript_conceal_noarg_arrow_function = "🞅"
 let g:javascript_conceal_underscore_arrow_function = "🞅"
 nmap <leader>jf :call JsBeautify()<cr>" Formart Javascript Files
+
+" Vim Code Fmt
+nmap <leader>fl :FormatLines<cr> " Format Lines
+nmap <leader>fc :FormatCode<cr> " Formtat Code
 
 " Vim JSX Configurations
 let g:vim_jsx_pretty_colorful_config = 10
