@@ -2,17 +2,20 @@ if exists('*minpac#init')
     call minpac#init()
     call minpac#add('k-takata/minpac', {'type': 'opt'})
 
+    " Not currently in use but they was useful some day
+    "call minpac#add('scrooloose/nerdcommenter') " Comment functions
+    "call minpac#add('vim-syntastic/syntastic')
+    "call minpac#add('tpope/vim-surround') " Surround everything (cs command)
+    "call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
+    "call minpac#add('junegunn/goyo.vim') " Distraction-free writing in Vim.
+    "call minpac#add('takac/vim-hardtime')
+
     " Cool Plugins
     call minpac#add('scrooloose/nerdtree')
-    call minpac#add('scrooloose/nerdcommenter') " Comment functions
     call minpac#add('xuyuanp/nerdtree-git-plugin') " Show git file statuses at nerdtree
     call minpac#add('ctrlpvim/ctrlp.vim') "Powerful fuzzy finder
-    "call minpac#add('vim-syntastic/syntastic')
     call minpac#add('vim-airline/vim-airline') " Beautiful statusbar
     call minpac#add('vim-airline/vim-airline-themes') " Themes for vim-airline
-    "call minpac#add('jeetsukumaran/vim-buffergator') "Easy way to deal with buffers
-    call minpac#add('brookhong/ag.vim') " The silver searcher vim plugin
-    "call minpac#add('tpope/vim-surround') " Surround everything (cs command)
     call minpac#add('brooth/far.vim') " Find And Replace
     call minpac#add('tpope/vim-fugitive') " Git wrapper for VIM
     call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
@@ -27,27 +30,23 @@ if exists('*minpac#init')
     " Visuals
     call minpac#add('altercation/vim-colors-solarized')
     call minpac#add('Yggdroot/indentLine')
-    "call minpac#add('junegunn/goyo.vim') " Distraction-free writing in Vim.
 
-    " Change Habits 
-    "call minpac#add('takac/vim-hardtime')
-    
     " Development
     call minpac#add('ervandew/supertab') " Complete most used words with tab
     call minpac#add('tpope/vim-endwise') " Helps to end certain structures automatically
     call minpac#add('editorconfig/editorconfig-vim') " Loads configurations from .editorconfig file
     call minpac#add('janko-m/vim-test') " Wrapper for running tests
     call minpac#add('sheerun/vim-polyglot') " A collection of language packs for Vim.
-    call minpac#add('natebosch/vim-lsc') " Vim Language Server Client
+    "call minpac#add('natebosch/vim-lsc') " Vim Language Server Client
 
    " Google Code Fmt
-    call minpac#add('google/vim-maktaba') " Utility for syntax-aware code formatting.
-    call minpac#add('google/vim-codefmt') " Utility for syntax-aware code formatting.
-    call minpac#add('google/vim-glaive')  " Used to configure codefmt's maktaba flags
+    "call minpac#add('google/vim-maktaba') " Utility for syntax-aware code formatting.
+    "call minpac#add('google/vim-codefmt') " Utility for syntax-aware code formatting.
+    "call minpac#add('google/vim-glaive')  " Used to configure codefmt's maktaba flags
     "call minpac#add('dense-analysis/ale') " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP)
 
     " Ruby
-    call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
+    "call minpac#add('vim-ruby/vim-ruby') " Plugin for editing and compiling Ruby
     "call minpac#add('tpope/vim-rails')
     "call minpac#add('tpope/vim-rake')
     "call minpac#add('tpope/vim-bundler') " Enable use of Bundler inside vim
@@ -62,9 +61,9 @@ if exists('*minpac#init')
     "call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
 
     " Flutter
-    call minpac#add('dart-lang/dart-vim-plugin') " Provides filetype detection, syntax highlighting, and indentation for Dart.
-    call minpac#add('thosakwe/vim-flutter') " Vim commands for Flutter, including hot-reload-on-save and more.
-    call minpac#add('natebosch/vim-lsc-dart') "
+    "call minpac#add('dart-lang/dart-vim-plugin') " Provides filetype detection, syntax highlighting, and indentation for Dart.
+    "call minpac#add('thosakwe/vim-flutter') " Vim commands for Flutter, including hot-reload-on-save and more.
+    "call minpac#add('natebosch/vim-lsc-dart') "
 
     " Elixir
     call minpac#add('elixir-editors/vim-elixir') " Syntax highlighting, Filetype detection, Automatic indentation
@@ -140,11 +139,11 @@ let g:javascript_conceal_underscore_arrow_function = "🞅"
 nmap <leader>jf :call JsBeautify()<cr>" Formart Javascript Files
 
 " Vim Code Fmt
-nmap <leader>fl :FormatLines<cr> " Format Lines
-nmap <leader>fc :FormatCode<cr> " Formtat Code
+"nmap <leader>fl :FormatLines<cr> " Format Lines
+"nmap <leader>fc :FormatCode<cr> " Formtat Code
 
 " Vim JSX Configurations
-let g:vim_jsx_pretty_colorful_config = 10
+"let g:vim_jsx_pretty_colorful_config = 10
 
 " Vim RSPEC Configurations
 "let g:rspec_command = "!bundle exec rspec --drb {spec}" " Make the plugin run this command by default
@@ -155,12 +154,12 @@ let g:vim_jsx_pretty_colorful_config = 10
 "map <Leader>ra :call RunAllSpecs()<CR>
 
 " Hardtime Configurations
-let g:hardtime_default_on = 1 " Enabled by default
-let g:hardtime_showmsg = 1 " Show messages
-let g:hardtime_maxcount = 2 " Allow to press the key max of 2 times
-let g:hardtime_ignore_buffer_patterns = [ "CustomPatt[ae]rn", "NERD.*", "Buffergator*" ] " Disable it for nerdtree
-let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-nnoremap <leader>ht <Esc>:call HardTimeToggle()<CR>
+"let g:hardtime_default_on = 1 " Enabled by default
+"let g:hardtime_showmsg = 1 " Show messages
+"let g:hardtime_maxcount = 2 " Allow to press the key max of 2 times
+"let g:hardtime_ignore_buffer_patterns = [ "CustomPatt[ae]rn", "NERD.*", "Buffergator*" ] " Disable it for nerdtree
+"let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+"nnoremap <leader>ht <Esc>:call HardTimeToggle()<CR>
 
 " Vim Fugitive Configurations
 nmap <leader>gb :Gblame<cr> " Git blame
@@ -175,7 +174,7 @@ nmap <leader>tl :TestLast<CR>
 nmap <leader>tv :TestVisit<CR>
 
 " The Silver Searcher Configurations
-nmap <leader>a :Ag 
+nmap <leader>a :Ag
 
 " Ruby Refactoring Plugin Configurations
 "nnoremap <leader>rap  :RAddParameter<cr>
@@ -189,14 +188,14 @@ nmap <leader>a :Ag
 "vnoremap <leader>rem  :RExtractMethod<cr>
 
 " Vim Flutter Configurations
-nnoremap <leader>df :DartFmt<cr>
-nnoremap <leader>flr :FlutterRun<cr>
-nnoremap <leader>flq :FlutterQuit<cr>
-nnoremap <leader>flh :FlutterHotReload<cr>
-nnoremap <leader>flhr :FlutterHotRestart<cr>
-nnoremap <leader>fld :FlutterVisualDebug<cr>
-nnoremap <leader>flem :FlutterEmulators<cr>
-nnoremap <leader>fldv :FlutterDevices<cr>
+"nnoremap <leader>df :DartFmt<cr>
+"nnoremap <leader>flr :FlutterRun<cr>
+"nnoremap <leader>flq :FlutterQuit<cr>
+"nnoremap <leader>flh :FlutterHotReload<cr>
+"nnoremap <leader>flhr :FlutterHotRestart<cr>
+"nnoremap <leader>fld :FlutterVisualDebug<cr>
+"nnoremap <leader>flem :FlutterEmulators<cr>
+"nnoremap <leader>fldv :FlutterDevices<cr>
 
 " Vim Mix Format Configurations
 " let g:mix_format_on_save = 1
