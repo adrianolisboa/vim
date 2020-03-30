@@ -16,11 +16,11 @@ if exists('*minpac#init')
     call minpac#add('ctrlpvim/ctrlp.vim') "Powerful fuzzy finder
     call minpac#add('vim-airline/vim-airline') " Beautiful statusbar
     call minpac#add('vim-airline/vim-airline-themes') " Themes for vim-airline
-    call minpac#add('brooth/far.vim') " Find And Replace
+    "call minpac#add('brooth/far.vim') " Find And Replace
     call minpac#add('tpope/vim-fugitive') " Git wrapper for VIM
-    call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
-    call minpac#add('godlygeek/tabular') " Use Tab or Tabularize to automatically ident selected lines
-    call minpac#add('jceb/vim-orgmode') " OrgMode for Vim
+    "call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
+    "call minpac#add('godlygeek/tabular') " Use Tab or Tabularize to automatically ident selected lines
+    "call minpac#add('jceb/vim-orgmode') " OrgMode for Vim
 
     " Text objects
     "call minpac#add('kana/vim-textobj-user') " Used for creating your own textobjects
@@ -57,7 +57,8 @@ if exists('*minpac#init')
     " Javascript
     call minpac#add('pangloss/vim-javascript')
     call minpac#add('maksimr/vim-jsbeautify') " Allows use of jsbeautifier
-    "call minpac#add('maxmellon/vim-jsx-pretty') " Syntax highlighting and indenting for JSX
+    call minpac#add('maxmellon/vim-jsx-pretty') " Syntax highlighting and indenting for JSX
+    call minpac#add('leafgarland/typescript-vim') " Syntax file and other settings for TypeScript.
     "call minpac#add('leshill/vim-json') " Improves the syntax highlighing for JSON files
 
     " Flutter
