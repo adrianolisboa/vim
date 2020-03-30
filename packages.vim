@@ -20,7 +20,7 @@ if exists('*minpac#init')
     call minpac#add('tpope/vim-fugitive') " Git wrapper for VIM
     "call minpac#add('christoomey/vim-titlecase') " Adds a new operator for titlecasing text (gt)
     "call minpac#add('godlygeek/tabular') " Use Tab or Tabularize to automatically ident selected lines
-    "call minpac#add('jceb/vim-orgmode') " OrgMode for Vim
+    call minpac#add('jceb/vim-orgmode') " OrgMode for Vim
 
     " Text objects
     "call minpac#add('kana/vim-textobj-user') " Used for creating your own textobjects
@@ -40,9 +40,9 @@ if exists('*minpac#init')
     "call minpac#add('natebosch/vim-lsc') " Vim Language Server Client
 
    " Google Code Fmt
-    "call minpac#add('google/vim-maktaba') " Utility for syntax-aware code formatting.
-    "call minpac#add('google/vim-codefmt') " Utility for syntax-aware code formatting.
-    "call minpac#add('google/vim-glaive')  " Used to configure codefmt's maktaba flags
+    call minpac#add('google/vim-maktaba') " Utility for syntax-aware code formatting.
+    call minpac#add('google/vim-codefmt') " Utility for syntax-aware code formatting.
+    call minpac#add('google/vim-glaive')  " Used to configure codefmt's maktaba flags
     "call minpac#add('dense-analysis/ale') " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP)
 
     " Ruby
