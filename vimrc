@@ -8,11 +8,10 @@ runtime macros/matchit.vim
 let mapleader=" "
 
 " Theme
-syntax enable       " enable syntax processing
 set background=dark
 colorscheme solarized
 
-" Turn Off Swap Files 
+" Turn Off Swap Files
 set noswapfile
 set nobackup
 set nowb
@@ -80,5 +79,12 @@ vnoremap <Left> <Nop>
 vnoremap <Right> <Nop>
 vnoremap <Up> <Nop>
 
-" Loads minpac and packages 
-source ~/.vim/packages.vim
+" Auto download plug plugin manager if it doesnt exist
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plugin definitions and configurations
+source ~/.vim/plugins.vim

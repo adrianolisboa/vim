@@ -18,15 +18,10 @@ Clone the repository on your home folder and create a symbolic link to the [*rc*
 
     % git clone git@github.com:adrianolisboa/vim.git
     % ln -s ${HOME}/.vim/vimrc ${HOME}/.vimrc
-
-Now run the following commands to clone [*minpac*](https://github.com/k-takata/minpac) package manager and install the plugins
-
-    % cd ~/.vim/pack/minpac/opt
-    % git clone https://github.com/k-takata/minpac.git
-    % vim +PackUpdate
+    % vim +PlugInstall
 
 ### Plugins
 
-Each time you want to add new plugins and install add them to *packages.vim* file and run:
+Each time you want to add new plugins and install add them to *plugins.vim* file and run:
 
-    :PackUpdate
+    :PlugInstall

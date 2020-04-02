@@ -1,3 +1,3 @@
-pack/minpac/opt/minpac
-pack/minpac/start
+plugged/
+autoload/plug.vim
 .netrwhist*
