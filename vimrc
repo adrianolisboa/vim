@@ -8,6 +8,7 @@ runtime macros/matchit.vim
 let mapleader=" "
 
 " Theme
+set syntax=on
 set background=dark
 colorscheme solarized
 
@@ -85,6 +86,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
+autocmd BufNewFile,BufRead *.tsx setlocal filetype=typescript
 
 " Plugin definitions and configurations
 source ~/.vim/plugins.vim

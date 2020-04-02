@@ -24,9 +24,8 @@ call plug#begin('~/.vim/plugged')
 
   " Javascript
   Plug 'pangloss/vim-javascript'
-  Plug 'maksimr/vim-jsbeautify' " Allows use of jsbeautifier
-  Plug 'maxmellon/vim-jsx-pretty' " Syntax highlighting and indenting for JSX
-  "Plug 'leafgarland/typescript-vim' " Syntax file and other settings for TypeScript.
+  "Plug 'maksimr/vim-jsbeautify' " Allows use of jsbeautifier
+  Plug 'leafgarland/typescript-vim' " Syntax file and other settings for TypeScript.
 
   " Elixir
   "Plug 'elixir-editors/vim-elixir' " Syntax highlighting, Filetype detection, Automatic indentation
@@ -87,13 +86,9 @@ nmap <leader>tl :TestLast<CR>
 nmap <leader>tv :TestVisit<CR>
 
 " Vim Javascript Configurations
-"let g:javascript_plugin_jsdoc = 1 " Syntax highlighting for http://usejsdoc.org
-"let g:javascript_plugin_flow = 1 " Syntax highlighting for https://flowtype.org
-"let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
-nmap <leader>jf :call JsBeautify()<cr>" Formart Javascript Files
-
-" Vim JSX Configurations
-let g:vim_jsx_pretty_colorful_config = 1
+let g:javascript_plugin_jsdoc = 1 " Syntax highlighting for http://usejsdoc.org
+let g:javascript_plugin_flow = 1 " Syntax highlighting for https://flowtype.org
+let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
 
 " Vim Code Fmt
 "nmap <leader>fl :FormatLines<cr> " Format Lines
