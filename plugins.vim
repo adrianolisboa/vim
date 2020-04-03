@@ -28,7 +28,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'leafgarland/typescript-vim' " Syntax file and other settings for TypeScript.
 
   " Elixir
-  "Plug 'elixir-editors/vim-elixir' " Syntax highlighting, Filetype detection, Automatic indentation
+  Plug 'elixir-editors/vim-elixir' " Syntax highlighting, Filetype detection, Automatic indentation
   Plug 'mhinz/vim-mix-format' " Run mix formatter asynchronously (:MixFormat, :verb MixFormat, :MixFormatDiff)
   Plug 'slashmili/alchemist.vim' " Completion for Modules and functions, and much more...
   Plug 'neomake/neomake' " Execute code checks to find mistakes in the currently edited file
