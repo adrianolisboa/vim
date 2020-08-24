@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'ervandew/supertab' " Complete most used words with tab
   Plug 'editorconfig/editorconfig-vim' " Loads configurations from .editorconfig file
   Plug 'janko-m/vim-test' " Wrapper for running tests
+  Plug 'dense-analysis/ale' " Asynchronous Lint Engine
 
   " Javascript
   Plug 'pangloss/vim-javascript'
@@ -112,3 +113,12 @@ nnoremap <leader>mfd :MixFormatDiff<cr>
 
 " Vim alchemist
 let g:alchemist_tag_disable = 1
+
+" Vim ALE
+nnoremap <leader>jf :ALEFix<cr>
+nnoremap <leader>jfp :ALEFix pretter<cr>
+nnoremap <leader>jfl :ALEFix eslint<cr>
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_fixers = ['prettier', 'eslint']
+let g:ale_fix_on_save = 1
