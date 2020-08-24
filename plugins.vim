@@ -10,21 +10,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'altercation/vim-colors-solarized'
   Plug 'Yggdroot/indentLine'
 
-  " Text objects
-  "Plug 'kana/vim-textobj-user' " Used for creating your own textobjects
-  "Plug 'nelstrom/vim-textobj-rubyblock' " Custom text object for selecting ruby blocks.
-  "Plug 'kana/vim-textobj-function' " Text objects for functions
-
   " Development
   Plug 'ervandew/supertab' " Complete most used words with tab
-  "Plug 'tpope/vim-endwise' " Helps to end certain structures automatically
   Plug 'editorconfig/editorconfig-vim' " Loads configurations from .editorconfig file
   Plug 'janko-m/vim-test' " Wrapper for running tests
-  "Plug 'sheerun/vim-polyglot' " A collection of language packs for Vim.
 
   " Javascript
   Plug 'pangloss/vim-javascript'
-  "Plug 'maksimr/vim-jsbeautify' " Allows use of jsbeautifier
   Plug 'leafgarland/typescript-vim' " Syntax file and other settings for TypeScript.
 
   " Elixir
@@ -43,15 +35,9 @@ call plug#begin('~/.vim/plugged')
   "Plug 'astashov/vim-ruby-debugger' " Interactive Ruby debugger
 
   " Flutter
-  "Plug 'dart-lang/dart-vim-plugin') " Provides filetype detection, syntax highlighting, and indentation for Dart.
-  "Plug 'thosakwe/vim-flutter') " Vim commands for Flutter, including hot-reload-on-save and more.
-  "Plug 'natebosch/vim-lsc-dart') "
-
-  " Google Code Fmt
-  "Plug 'google/vim-maktaba' " Utility for syntax-aware code formatting.
-  "Plug 'google/vim-codefmt' " Utility for syntax-aware code formatting.
-  "Plug 'google/vim-glaive'  " Used to configure codefmt's maktaba flags
-  "Plug 'dense-analysis/ale' " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP)
+  "Plug 'dart-lang/dart-vim-plugin' " Provides filetype detection, syntax highlighting, and indentation for Dart.
+  "Plug 'thosakwe/vim-flutter' " Vim commands for Flutter, including hot-reload-on-save and more.
+  "Plug 'natebosch/vim-lsc-dart' "
 call plug#end()
 
 " Ctrlp Configurations
@@ -90,10 +76,6 @@ let g:javascript_plugin_jsdoc = 1 " Syntax highlighting for http://usejsdoc.org
 let g:javascript_plugin_flow = 1 " Syntax highlighting for https://flowtype.org
 let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
 
-" Vim Code Fmt
-"nmap <leader>fl :FormatLines<cr> " Format Lines
-"nmap <leader>fc :FormatCode<cr> " Formtat Code
-"
 " Vim RSPEC Configurations
 "let g:rspec_command = "!bundle exec rspec --drb {spec}" " Make the plugin run this command by default
 "let g:rspec_runner = "os_x_iterm" " This will run the specs in the last session of the current terminal.
@@ -124,7 +106,6 @@ let g:javascript_plugin_ngdoc = 1 " Syntax highlighting for NGDocs
 "nnoremap <leader>fldv :FlutterDevices<cr>
 
 " Vim Mix Format Configurations
-" let g:mix_format_on_save = 1
 nnoremap <leader>mf :MixFormat<cr>
 nnoremap <leader>mfv :verb MixFormat<cr>
 nnoremap <leader>mfd :MixFormatDiff<cr>
