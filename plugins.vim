@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'editorconfig/editorconfig-vim' " Loads configurations from .editorconfig file
   Plug 'janko-m/vim-test' " Wrapper for running tests
   Plug 'dense-analysis/ale' " Asynchronous Lint Engine
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Javascript
   Plug 'pangloss/vim-javascript'
@@ -122,3 +123,14 @@ let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_fixers = ['prettier', 'eslint']
 let g:ale_fix_on_save = 1
+
+" COC LSP
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> dp <Plug>(coc-diagnostic-prev)
+nmap <silent> dn <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
