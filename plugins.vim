@@ -117,7 +117,7 @@ let g:alchemist_tag_disable = 1
 
 " Vim ALE
 nnoremap <leader>jf :ALEFix<cr>
-nnoremap <leader>jfp :ALEFix pretter<cr>
+nnoremap <leader>jfp :ALEFix prettier<cr>
 nnoremap <leader>jfl :ALEFix eslint<cr>
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
