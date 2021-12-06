@@ -6,16 +6,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline' " Beautiful statusbar
   Plug 'vim-airline/vim-airline-themes' " Themes for vim-airline
   Plug 'tpope/vim-fugitive' " Git wrapper for VIM
-  Plug 'jceb/vim-orgmode' " OrgMode for Vim
+  "Plug 'jceb/vim-orgmode' " OrgMode for Vim
   Plug 'altercation/vim-colors-solarized'
-  Plug 'Yggdroot/indentLine'
+  "Plug 'Yggdroot/indentLine'
 
   " Development
   Plug 'ervandew/supertab' " Complete most used words with tab
   Plug 'editorconfig/editorconfig-vim' " Loads configurations from .editorconfig file
   Plug 'janko-m/vim-test' " Wrapper for running tests
   Plug 'dense-analysis/ale' " Asynchronous Lint Engine
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Javascript
   Plug 'pangloss/vim-javascript'
