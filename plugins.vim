@@ -62,8 +62,8 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*'] " plugin works well with
 let g:EditorConfig_exclude_patterns = ['scp://.*'] " avoid loading EditorConfig for any remote files over ssh
 
 " Vim Fugitive Configurations
-nmap <leader>gb :Gblame<cr> " Git blame
-nmap <leader>gs :Gstatus<cr> " Git status
+nmap <leader>gb :Git blame<cr> " Git blame
+nmap <leader>gs :Git status<cr> " Git status
 nmap <leader>gc :if confirm('Revert file to original status?', "&Yes\n&No", 1)==1 <Bar> :execute ":Git checkout %" <Bar> endif<CR><CR> " Ask for confirmation, then checkout modifications
 
 " Vim Test Configurations
